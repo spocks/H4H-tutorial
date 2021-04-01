@@ -7,9 +7,11 @@ print(N)
 
 registerDoParallel(N)
 
-foreach (i= 1:(2*N) ) %dopar% {
+foreach (i= 1:100) %dopar% {
   Sys.sleep(10)
+  
 }
+
 stopImplicitCluster()
 
 print(proc.time() - t0)

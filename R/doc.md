@@ -46,12 +46,14 @@ salloc -c 1 -t 0:15:0 --mem 2G
 Once in the node, load R as:
 
 ``` r
-module load R/3.6.1
+module load R 
 ```
 
-After this you can use Rscript or R interactive session. Type R and see
-if it works. Note that once time is over you will be disconnected from
-the node and all unsaved data will be gone.
+This will load latest version of R. You can see all available version by
+pressing Tab key after **module load R**. After this you can use Rscript
+or R interactive session. Type R and see if it works. Note that once
+time is over you will be disconnected from the node and all unsaved data
+will be gone.
 
 ## Installing R packages:
 
@@ -63,7 +65,7 @@ the only node with internet access.
 salloc --partition=build -c 1 -t 1:0:0 --mem 2G 
 
 #load R 
-module load R/3.6.1
+module load R
 
 #run R
 R
