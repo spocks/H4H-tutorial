@@ -15,6 +15,8 @@ node.
 ssh -p 10022 userName@172.27.23.163
 ```
 
+![H4H system](../image/H4H_fig.png)
+
 ## Data transfer
 
 Data can be transferred to and from H4H using the scp command. This
